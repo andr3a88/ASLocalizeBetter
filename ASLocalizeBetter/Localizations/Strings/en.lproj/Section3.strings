@@ -1,0 +1,10 @@
+/* 
+  Section3.strings
+  ASLocalizeBetter
+
+  Created by Andrea on 17/01/2018.
+  Copyright © 2018 Andrea Stevanato. All rights reserved.
+*/
+
+"title" = "Title Section 3";
+"description" = "Missing localization key surrounded by **";
