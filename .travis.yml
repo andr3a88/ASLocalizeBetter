@@ -4,7 +4,7 @@ before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
     - gem install danger --no-ri --no-rdoc --no-document
     - gem install danger-swiftlint --no-ri --no-rdoc --no-document
-    - if [ $DANGER == "ALLOW" ]; then
+    - if [ $DANGER == 'ALLOW' ]; then
          danger;
          swiftlint lint;
       fi
@@ -16,6 +16,6 @@ matrix:
  fast_finish: true
  include:
  - osx_image: xcode10
-   env: CI_BUILD_TARGET='nap' CI_DEVICE='iPhone X (12.0)' DANGER="ALLOW"
+   env: CI_BUILD_TARGET='nap' CI_DEVICE='iPhone X (12.0)' DANGER='ALLOW'
  - osx_image: xcode10
    env: CI_BUILD_TARGET='nap' CI_DEVICE='iPad Air 2 (12.0)'    
