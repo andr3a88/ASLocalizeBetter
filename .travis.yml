@@ -1,8 +1,21 @@
-"language": "swift"
-"osx_image": "xcode10"
-"before_script":
+language: swift
+osx_image: xcode10
+before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
     - gem install danger --no-ri --no-rdoc --no-document
     - gem install danger-swiftlint --no-ri --no-rdoc --no-document
-"script":
+script:
     - xcodebuild clean test -project ASLocalizeBetter.xcodeproj -scheme ASLocalizeBetter -destination "platform=iOS Simulator,name=iPhone 8,OS=11.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+
+- if [ $DANGER == "ALLOW" ]; then
+         danger;
+         swiftlint lint;
+     fi
+     
+matrix:
+ fast_finish: true
+ include:
+ - osx_image: xcode10
+   env: CI_BUILD_TARGET='nap' CI_DEVICE='iPhone X (12.0)' DANGER="ALLOW"
+ - osx_image: xcode10
+   env: CI_BUILD_TARGET='nap' CI_DEVICE='iPad Air 2 (12.0)'    
