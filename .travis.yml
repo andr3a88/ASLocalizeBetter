@@ -4,6 +4,7 @@ before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
     - gem install danger --no-ri --no-rdoc --no-document
     - gem install danger-swiftlint --no-ri --no-rdoc --no-document
+    - brew install danger/tap/danger-swift
     - if [ $DANGER == "ALLOW" ]; then
          danger process danger-swift;
          swiftlint lint;
