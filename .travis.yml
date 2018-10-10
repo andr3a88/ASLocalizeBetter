@@ -2,8 +2,7 @@ language: swift
 osx_image: xcode10
 before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
-    - gem install danger --no-ri --no-rdoc --no-document
-    - gem install danger-swiftlint --no-ri --no-rdoc --no-document
+    - npm install -g danger
     - brew install danger/tap/danger-swift
     - danger process danger-swift
     - swiftlint lint
