@@ -3,7 +3,7 @@ osx_image: xcode10
 before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
     - gem install danger --no-ri --no-rdoc --no-document
-    - gem install danger-swiftlint --no-ri --no-rdoc --no-document
+    - gem install danger-swift --no-ri --no-rdoc --no-document
     - danger process danger-swift
     - swiftlint lint;
       
