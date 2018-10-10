@@ -2,10 +2,10 @@ language: swift
 osx_image: xcode10
 before_script:
     - gem install fastlane --no-ri --no-rdoc --no-document
-    - npm install -g danger
-    - brew install danger/tap/danger-swift
+    - gem install danger --no-ri --no-rdoc --no-document
+    - gem install danger-swiftlint --no-ri --no-rdoc --no-document
     - danger process danger-swift
-    - swiftlint lint
+    - swiftlint lint;
       
 script:
     - xcodebuild clean test -project ASLocalizeBetter.xcodeproj -scheme ASLocalizeBetter -destination "platform=iOS Simulator,name=iPhone 8,OS=11.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
