@@ -5,7 +5,7 @@ before_script:
     - gem install danger --no-ri --no-rdoc --no-document
     - gem install danger-swiftlint --no-ri --no-rdoc --no-document
     - if [ $DANGER == "ALLOW" ]; then
-         danger;
+         danger process danger-swift;
          swiftlint lint;
       fi
       
