@@ -27,6 +27,7 @@
 		650A6D1C200F939B00AD615A /* Section2.strings in Resources */ = {isa = PBXBuildFile; fileRef = 650A6D04200F8E2600AD615A /* Section2.strings */; };
 		650A6D1D200F939B00AD615A /* Section3.strings in Resources */ = {isa = PBXBuildFile; fileRef = 650A6D08200F8E2C00AD615A /* Section3.strings */; };
 		650FA710200F9BC800A7CBEA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 650FA70F200F9BC800A7CBEA /* README.md */; };
+		65799F17216D3DFC0062FB99 /* Dangerfile in Sources */ = {isa = PBXBuildFile; fileRef = 65799F15216D3DD70062FB99 /* Dangerfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		650A6D10200F925100AD615A /* ASLocalizeBetterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLocalizeBetterUITests.swift; sourceTree = "<group>"; };
 		650A6D12200F925100AD615A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		650FA70F200F9BC800A7CBEA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		65799F15216D3DD70062FB99 /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		650A6CBA200F506400AD615A = {
 			isa = PBXGroup;
 			children = (
+				65799F15216D3DD70062FB99 /* Dangerfile */,
 				650FA70F200F9BC800A7CBEA /* README.md */,
 				650A6CC5200F506400AD615A /* ASLocalizeBetter */,
 				650A6CDA200F506400AD615A /* ASLocalizeBetterTests */,
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65799F17216D3DFC0062FB99 /* Dangerfile in Sources */,
 				650A6CC9200F506400AD615A /* ViewController.swift in Sources */,
 				650A6CF0200F512900AD615A /* LocalizableProtocol.swift in Sources */,
 				650A6CF2200F516500AD615A /* LocalizationKey.swift in Sources */,
