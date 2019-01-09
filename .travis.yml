@@ -8,6 +8,7 @@ directories:
 
 install:
 - npm install -g danger
+- brew install danger/tap/danger-swift
 
 script:
 - danger-swift ci
